@@ -90,7 +90,7 @@ collision_edge = 0;
 collisionCheck = function() {
 	var hit = 0;
 	for (var i = 1; i < snake.length && !hit; i++) {
-		hit = (hypot(dots[i].x, dots[i].y, dots[0].x, dots[0].y) < 6);
+		hit = (hypot(dots[i].x, dots[i].y, dots[0].x, dots[0].y) < 3);
 	}
 	if (hit && !collision_edge) {
 		console.log("splat");
